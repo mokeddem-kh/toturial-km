@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;900&family=Saira:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    margin: 0 7rem;
+    height: 100%;
+}
+#home{
+    height: 100vh;
+    background: #0162be;
+    color: #fff;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;/*تخلي ليست اقصى اليمين*/
+    align-items: center;
+    padding: 25px 0;
+}
+nav .logo{
+    width: 180px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+nav ul a {
+    color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+}
+#home .content{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 70%;
+}
+#home .content img{
+   width:900px;
+   animation: animation1 1s ease-in-out;
+}
+#home .content .content-test h1{
+font-size: 40px;
+font-weight: 900;
+margin-bottom: 10px;
+}
+#home .content .content-test h1 span{
+    font-size: 70px;
+    line-height: 70px;
+}
+#home .content .content-test h1 p{
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    width: 80%;
+   
+
+
+}
+.btn{
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: rgb(247, 245, 245);
+    border-radius: 30px;
+    color: black;
+   line-height: 70px;
+   transition: all 1s; 
+   
+}
+.btn:hover{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #fff;
+}
+.social{
+    margin-left: 3px;
+    animation: animation1 1s ease-in-out;
+}
+.social i{
+    color: #fff;
+    font-size: 25px;
+    margin:  10px 0 ;
+}
+.pepsi-types {
+    width: 100px ;
+    margin: auto;
+    display: block;
+    animation: animation2 1s ease-out;
+}
+@keyframes animation1 {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animation2 {
+    0%{
+        transform: translatey(200px);
+    }
+    100%{
+        transform: translatey(0);
+    }
+}
